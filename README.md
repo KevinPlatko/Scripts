@@ -11,7 +11,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
 
 
 This document contains the following details:
-- Description of the Topologu
+- Description of the Topology
 - Access Policies
 - ELK Configuration
   - Beats in Use
@@ -65,7 +65,7 @@ A summary of the access policies in place can be found in the table below.
 | Web 1,2,3         | No                    |  Web Load Balancer 40.122.149.102                    |
 | Web Load Balancer(LB)         |  Yes-Port 80 HTTP                   | *                     |
 | ELK                    | Yes-Port 5601-Kibana   | 71.91.64.120          |
-| ELK                    | Yes-HTTP API-9200      | 10.0.0.0/16           | 
+ 
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because this reduces human error and allows you to automate an entire system or machine all at once. 
