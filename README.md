@@ -2,7 +2,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-![TODO: Update the path with the name of your diagram](Images/diagram_filename.png)
+![](Images/Network%20Diagram.png) 
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the Filebeat-Install.yml file may be used to install only certain pieces of it, such as Filebeat.
 
@@ -38,7 +38,7 @@ The configuration details of each machine may be found below.
 
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
-| Jump Box | Gateway  | 10.0.0.4-Private; 20.85.243.139-Plublic  | Linux-Ubuntu            |
+| Jump Box | Gateway  | 10.0.0.4-Private; 20.85.243.139-Public  | Linux-Ubuntu            |
 | Web-1    | Web Server          |10.0.0.8            |  Linux-Ubuntu                |
 | Web-2    | Web Server          |10.0.0.7            |  Linux-Ubuntu                |
 | Web-3    | Web Server         | 10.0.0.9           |   Linux-Ubutunt              |
@@ -64,9 +64,8 @@ A summary of the access policies in place can be found in the table below.
 | Jump Box | Yes; SSH-Port 22             | 71.91.64.120   |
 | Web 1,2,3         | No                    |  Web Load Balancer 40.122.149.102                    |
 | Web Load Balancer(LB)         |  Yes-Port 80 HTTP                   | *                     |
-| ELK                    | Yes-Port 5601-Kibana   | *          |
-| ELK                    | Yes-HTTP-Port 9200     | 10.1.0./16 | 
-
+| ELK                    | Yes-Port 5601-Kibana   | 71.91.64.120          |
+| ELK                    | Yes-HTTP API-9200      | 10.0.0.0/16           | 
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because this reduces human error and allows you to automate an entire system or machine all at once. 
