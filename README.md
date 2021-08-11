@@ -136,7 +136,7 @@ Source: https://github.com/KevinPlatko/Scripts/blob/main/Ansible/Filebeat-Instal
 ![](Images/MetricBeat%20Output.elastic.png) 
 - Run the play with ansible-playbook Metricbeat-install.yml 
 
--Upon loading the data in Kibana, you should see a webpage similar to this: 
+- Upon loading the data in Kibana, you should see a webpage similar to this: 
 ![](Images/MetricBeatSample.png) 
 
 
