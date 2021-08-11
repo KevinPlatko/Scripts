@@ -1,6 +1,6 @@
 ## Automated ELK Stack Deployment
 
-The files in this repository were used to configure the network depicted below.
+The files in this repository were used to configure the network depicted below: 
 
 ![](Images/Network%20Diagram.png) 
 
@@ -41,7 +41,7 @@ The configuration details of each machine may be found below.
 | Jump Box | Gateway  | 10.0.0.4-Private; 20.85.243.139-Public  | Linux-Ubuntu            |
 | Web-1    | Web Server          |10.0.0.8            |  Linux-Ubuntu                |
 | Web-2    | Web Server          |10.0.0.7            |  Linux-Ubuntu                |
-| Web-3    | Web Server         | 10.0.0.9           |   Linux-Ubutunt              |
+| Web-3    | Web Server         | 10.0.0.9           |   Linux-Ubuntu            |
 | ELK      | ElasticSearch Stack| 10.1.0.4-Private; 40.122.149.102-Public | Linux-Ubuntu 
 
 ### Access Policies
@@ -123,6 +123,9 @@ Source: https://github.com/KevinPlatko/Scripts/blob/main/Ansible/Filebeat-Instal
 
 - Run the play with the command ansible-playbook Filebeat-Install.yml 
 
+- Upon loading the data in Kibana, you should then see a webpage similar to this: 
+![](Images/FilebeatSample.png)
+
 ### Installing Metricbeat 
 
 - Install by downloading the Metricbeat-install.yml file, https://github.com/KevinPlatko/Scripts/blob/main/Ansible/Metricbeat-install.yml
@@ -132,4 +135,8 @@ Source: https://github.com/KevinPlatko/Scripts/blob/main/Ansible/Filebeat-Instal
 ![](Images/setup.kibana.host%20.png) 
 ![](Images/MetricBeat%20Output.elastic.png) 
 - Run the play with ansible-playbook Metricbeat-install.yml 
+
+-Upon loading the data in Kibana, you should see a webpage similar to this: 
+![](Images/MetricBeatSample.png) 
+
 
